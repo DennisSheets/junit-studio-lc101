@@ -85,4 +85,14 @@ public class BalancedBracketsTest {
         assertFalse(BalancedBrackets.hasBalancedBrackets( "][["));
     }
 
+    @Test
+    public void randomCharacters0() { assertFalse(BalancedBrackets.hasBalancedBrackets("a,lkdsjfaksdfjwaeoir"));}
+
+    @Test
+    public void randomCharacters1() { assertFalse(BalancedBrackets.hasBalancedBrackets("[a,lkdsjfaksdfjwaeoir]"));}
+
+    @Test
+    public void randomCharacters2() { assertFalse(BalancedBrackets.hasBalancedBrackets(";a;lkdsjf;aksdfj,,waeoir987987&*^%*&^%"));}
+
+
 }
